@@ -3,13 +3,39 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: rgba(106, 200, 243, 0.363);
+    background-repeat: repeat;
+    padding: 5vw; 
+    --md-filled-text-field-container-color: #ffffff;
+    --md-filled-text-field-focus-active-indicator-color: black;
+    --md-filled-text-field-container-shape: 0px;
 }
 .btn {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    display:flexbox;
+    /* display: flex; */
+    justify-content: center; 
+    width: 15vw;
+    --md-filled-button-container-shape: 0px;
+    --md-filled-button-container-color: rgb(0, 0, 0);
+    --md-filled-button-label-text-color: white;
+    --md-filled-button-hover-label-text-color: rgba(106, 200, 243, 0.795);
+}
+.btnBox {
+    align-items: center;
+    text-align: center;
 }
 .textField {
     display: block;
+    /* padding: 2vw; */
+    margin: 2vw;
+    width: 15vw;
+    justify-content: center; 
+}
+.textBox {
+    align-items: center;
+    text-align: center;  
+}
+.header {
+    text-align: center;
+    text-size-adjust: 10vw;
+
 }
