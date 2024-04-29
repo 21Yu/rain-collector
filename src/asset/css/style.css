@@ -39,3 +39,12 @@
     text-size-adjust: 10vw;
 
 }
+.progBar {
+    --md-circular-progress-size: 40vw;
+    --md-circular-progress-active-indicator-color: rgba(106, 200, 243, 0.363);
+    --md-circular-progress-active-indicator-width: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
