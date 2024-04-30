@@ -17,7 +17,7 @@
     --md-filled-button-container-shape: 0px;
     --md-filled-button-container-color: rgb(0, 0, 0);
     --md-filled-button-label-text-color: white;
-    --md-filled-button-hover-label-text-color: rgb(106, 200, 243);
+    --md-filled-button-hover-label-text-color: rgba(250, 235, 215, 0.747);
 }
 .btnBox {
     align-items: center;
@@ -42,7 +42,7 @@
 .progBar {
     --md-circular-progress-size: 40vw;
     --md-circular-progress-active-indicator-color: rgba(106, 200, 243, 0.363);
-    --md-circular-progress-active-indicator-width: 5;
+    /* --md-circular-progress-active-indicator-width: ; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -68,5 +68,17 @@ strong {
     --md-slider-pressed-handle-color: black;
     --md-slider-focus-handle-color: rgba(106, 200, 243, 0.363);
     height: 30vh;
-    width: 50vw;
+    width: 40vw;
+}
+.floatBtn {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);  
+}
+.fl {
+    size: 5vh;
+}
+body {
+    background-color: antiquewhite;
 }

@@ -5,3 +5,5 @@ import '@material/web/progress/circular-progress.js';
 import '@material/web/tabs/tabs.js';
 import '@material/web/tabs/primary-tab.js';
 import '@material/web/slider/slider.js';
+import '@material/web/fab/fab.js';
+import '@material/web/icon/icon.js';
