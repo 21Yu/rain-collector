@@ -9,6 +9,7 @@
     --md-filled-text-field-container-color: #ffffff;
     --md-filled-text-field-focus-active-indicator-color: black;
     --md-filled-text-field-container-shape: 0px;
+    font-family: arial;
 }
 .btn {
     /* display: flex; */
@@ -58,6 +59,8 @@ strong {
 .tabs {
     --md-primary-tab-container-color: rgba(106, 200, 243, 0.363);
     --md-primary-tab-active-indicator-color: black;
+    --md-primary-tab-label-text-font: arial;
+    --md-primary-tab-label-text-weight: bold;
 }
 .slider {
     --md-slider-active-track-color:black;
@@ -81,4 +84,5 @@ strong {
 }
 body {
     background-color: antiquewhite;
+
 }
