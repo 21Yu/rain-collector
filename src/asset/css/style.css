@@ -17,7 +17,7 @@
     --md-filled-button-container-shape: 0px;
     --md-filled-button-container-color: rgb(0, 0, 0);
     --md-filled-button-label-text-color: white;
-    --md-filled-button-hover-label-text-color: rgba(106, 200, 243, 0.795);
+    --md-filled-button-hover-label-text-color: rgb(106, 200, 243);
 }
 .btnBox {
     align-items: center;
@@ -47,4 +47,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:xx-large ;
+}
+.tabs {
+    --md-primary-tab-container-color: rgba(106, 200, 243, 0.363);
+    --md-primary-tab-active-indicator-color: black;
 }
