@@ -59,3 +59,14 @@ strong {
     --md-primary-tab-container-color: rgba(106, 200, 243, 0.363);
     --md-primary-tab-active-indicator-color: black;
 }
+.slider {
+    --md-slider-active-track-color:black;
+    --md-slider-inactive-track-color:rgba(106, 200, 243, 0.363);
+    --md-slider-handle-color:black;
+    --md-slider-hover-handle-color: rgba(106, 200, 243, 0.363);
+    --md-slider-label-container-color: black;
+    --md-slider-pressed-handle-color: black;
+    --md-slider-focus-handle-color: rgba(106, 200, 243, 0.363);
+    height: 30vh;
+    width: 50vw;
+}
