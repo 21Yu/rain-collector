@@ -1,0 +1,22 @@
+{
+  "name": "rain-collector",
+  "version": "1.0.0",
+  "description": "express + mongoDB",
+  "main": "index.js",
+  "scripts": {
+    "rain": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^8.6.0"
+  }
+}
