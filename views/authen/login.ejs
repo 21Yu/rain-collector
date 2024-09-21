@@ -1,11 +1,12 @@
-<% if (message) { %>
-    <div>
-        <%= message %>
-    </div>
-<% } %>
-<form>
+<form action="/authen/login" method="post">
     <%- include('../partials/form_field.ejs') %>
     <button type="submit">log in</button>
 </form>
 <a href="/authen/signUp">sign Up</a>
 <a href="/">cancel</a>
+
+<% if (message) { %>
+    <div>
+        <%= message %>
+    </div>
+<% } %>
