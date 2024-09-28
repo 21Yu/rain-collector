@@ -1,15 +1,24 @@
 <h1>welcome</h1> 
 
-<div>
-    <strong>Date:</strong> <%= rainData.date.toDateString() %> <!-- Format date -->
-</div>
-<div>
-    <strong>Amount:</strong> <%= rainData.amount %> mm <!-- Display amount -->
-</div>
-<div>
-    <strong>Location:</strong> <%= rainData.location %> <!-- Display location -->
-</div>
+<form action="/users/<%= rainData._id %>/edit" method="POST">
+    <div>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" value="<%= rainData.date.toISOString().substring(0, 10) %>">
+    </div>
+    <div>
+        <label for="amount">Amount (mm):</label>
+        <input type="number" id="amount" name="amount" value="<%= rainData.amount %>">
+    </div>
+    <div>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" value="<%= rainData.location %>">
+    </div>
+    <button type="submit">Save Changes</button>
+</form>
 
+<form action="/users/<%= rainData.userId %>/delete" method="POST">
+    <button type="submit">Delete Account</button>
+</form>
 
 <% if (message) { %>
     <div>
