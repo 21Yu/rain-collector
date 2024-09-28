@@ -1,6 +1,12 @@
-<form action="/authen" method="post">
+<form action="/authen/signUp" method="post">
     <%- include('../partials/form_field.ejs') %>
     <button type="submit">sign up</button>
 </form>
-<a href="/authen/">log in</a>
+<a href="/authen/login">log in</a>
 <a href="/">cancel</a>
+
+<% if (message) { %>
+    <div>
+        <%= message %>
+    </div>
+<% } %>

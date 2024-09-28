@@ -1,2 +1,18 @@
-welcome 
-<%= userMessage %>
+<h1>welcome</h1> 
+
+<div>
+    <strong>Date:</strong> <%= rainData.date.toDateString() %> <!-- Format date -->
+</div>
+<div>
+    <strong>Amount:</strong> <%= rainData.amount %> mm <!-- Display amount -->
+</div>
+<div>
+    <strong>Location:</strong> <%= rainData.location %> <!-- Display location -->
+</div>
+
+
+<% if (message) { %>
+    <div>
+        <%= message %>
+    </div>
+<% } %>

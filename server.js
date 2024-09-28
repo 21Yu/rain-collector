@@ -6,6 +6,7 @@ const bodyParser = require('body-parser')
 
 const homeRouter = require('./routes/homeRouter')
 const authenRouter = require('./routes/authenRouter')
+const userRouter = require('./routes/userRouter')
 
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
@@ -23,6 +24,7 @@ app.use(bodyParser.urlencoded({ limit: '10mb', extended: false}))
 
 app.use('/', homeRouter)
 app.use('/authen', authenRouter)
+app.use('/users', userRouter)
 
 app.listen(1000, ()=>{
     console.log("port connected")

@@ -1,26 +1,34 @@
 const express = require('express')
 const router = express.Router()
 const authUser = require('../models/authUser')
+const rainInfo = require('../models/rainInfo')
 
-router.get('/', (req, res) => {
+router.get('/login', (req, res) => {
     res.render('authen/login', { message: ''})
 })
 
 router.get('/signUp', (req, res) => {
-    res.render('authen/signUp')
+    res.render('authen/signUp', { message: ''})
 })
 
-router.post('/', async (req, res) => {
+router.post('/signUp', async (req, res) => {
     try {
         const user = new authUser({
             userName: req.body.userName,
             password: req.body.password
         })
-
         await user.save()
-        res.render('authen/login', { message: 'Sign up success'})
+        
+        const rainData = new rainInfo({
+            amount: 0,
+            location: 'Vancouver',
+            userId: user._id  
+        })
+        await rainData.save()
+        
+        res.render('authen/signUp', { message: 'Sign up success'})
     } catch {
-        res.render('authen/login', { message: 'error signing up'})
+        res.render('authen/signUp', { message: 'error signing up'})
     }
 })
 
@@ -33,7 +41,7 @@ router.post('/login', async (req, res) => {
         }
 
         if (user.password == req.body.password) {
-            return res.render('userPages/dashboard', { userMessage: user.userName})
+            return res.redirect(`/users/${user._id}`) 
         } else {
             return res.render('authen/login', { message: 'wrong password'})
         }
